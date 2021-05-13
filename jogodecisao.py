@@ -3,16 +3,14 @@ import random
 def jogar():
     imprime_abertura()
 
-
-    fim = 10
+    fim = 5
     cont = 0
-
 
     while cont < fim:
         pergunta()
 
         loop_resp(fim, cont, [carrega_respostas()])
-
+        cont = cont + 1
     else:
         print("Decidido e boa sorte!")
 
@@ -29,7 +27,7 @@ def pergunta():
 def loop_resp(fim, cont, resp_loop):
     for resp in resp_loop:
         print(resp)
-        cont = cont + 1
+
 
 def carrega_respostas(nome_arquivo = "respostas.txt"):
     arquivo = open(nome_arquivo, "r")
