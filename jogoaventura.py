@@ -32,6 +32,22 @@ def jogar():
                 print("Que pena parça, você ficou loco e passou sua grana toda para uma instituição de caridade pela net!! Pelo lado bom você tem salvação!!")
             else:
                 print("É parça!! Era melhor não ter ido porque agora você sabe que se casou e não vai poder curtir mais a vida!!")
+    elif(um_pergunta == 2):
+        print("Você é um cara de bom coração!!! Mais será que esta falando a verdade mesmo??")
+        um_dois = pergunta_dois()
+        if(um_dois == 1):
+            print("BOM PELO MENOS VC ESTÁ TENTANDO SER HONESTO")
+            um_dois_dois = pergunta_dois_dois()
+            if(um_dois_dois == 1):
+                print("Boa!!! Está sendo hosnesto e irá ajudar pessoas! VC ESTÁ SALVO NO REINO DE DEUS! HAHAHAHA")
+            elif(um_dois_dois == 2):
+                print("HUMMMMM! SERÁ QUE PODEMOS ACREDITAR NESTES 50% NÃO ESTAMOS MUITO CERTOS QUE VOCÊ IRÁ FAZER ISSO!! TÁ MENTIDO? DESUS CASTIGA! HAHAHAHA")
+            else:
+                print("HAHAHAHAHAHAH BOA TENTATIVA DE NOS ENGANAR PENSANDO QUE VAI PRO SEU!! COMEÇA O JOGO NOVAMENTE E ESCOLHE OUTRA OPÇÃO!!!!")
+        else:
+            print("NÃO MINTA PARA MENTIROSO SABEMOS QUE NÃO VAI FAZER ISSO!! HAHAHAHAHHA")
+    else:
+        print("VOCÊ É FERA BIXO!!! Isso é ser honesto")
 
 
     print("***********************************************")
@@ -50,7 +66,7 @@ def esplic_jogo():
 
 def pergunta_um():
     print("###################################")
-    print("O que você faria com R$ 1.00000,00?")
+    print("O que você faria se ganhasse $ 1.00000,00?")
     print("Escolha as opções abaixo:")
     resp = int(input("(1) Gastaria tudo em Festas! (2) Ajudaria Pessoas em Dificuldades (3) Gastaria e também ajudaria:\n"))
     return resp
@@ -87,6 +103,20 @@ def pergunta_tres_um():
     print("#############################################")
     print("Já que você acordou e não lembra de nada do que você fez qual seria o seu pensamento:")
     resp = int(input("(1) FODA-SE!! BORA CURTIR SOU RICO MESMO! ou (2) Vou saber o que aconteceu e o que eu fiz!!\n"))
+    return resp
+
+def pergunta_dois():
+    print("#############################################")
+    print("#############################################")
+    print("Então borá verificar isso!! Vejamos o que você poderia fazer!!")
+    resp = int(input("(1) Administraria o dinheiro ajudando conforme suas pesquisas ou (2) Transferia o dinheiro para um instituição confiavél\n"))
+    return resp
+
+def pergunta_dois_dois():
+    print("#############################################")
+    print("#############################################")
+    print("Quanto estaria disposto a doar deste dinheiro:")
+    resp = int(input("(1) 30% ou (2) 50% ou (3) 80%\n"))
     return resp
 
 if (__name__ == "__main__"):
