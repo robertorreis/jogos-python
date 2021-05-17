@@ -1,3 +1,4 @@
+
 def jogar():
     imprime_abertura()
     esplic_jogo()
